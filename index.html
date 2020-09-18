@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+
+   <style>
+   .attribution { font-size: 11px; text-align: center; }
+   .attribution a { color: hsl(228, 45%, 44%); }
+   </style>
+   <link rel="stylesheet" href="./stylemin.css">
+</head>
+<body>
+   <header>
+      <div class="main-header">
+         <div class="header-title">
+            <h1 class="header-title__main">Social Media Dashboard</h1>
+            <h2 class="header-title__sub">Total Followers: 23,004</h2>
+         </div>
+         <div class="header-theme">
+            <label for="switch">Dark Mode</label>
+            <input type="checkbox" name="switch" id="dark-mode-switch" class="switch">
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+      <div class="cards">
+
+         <div class="card facebook">
+            <div class="card__social">
+               <img src="./assets/images/icon-facebook.svg" alt="" srcset="">
+               <p class="card__address">@nathanf</p>
+            </div>
+            <div class="card__followeres">
+               <p class="card__amaount">1987</p>
+               <p class="card__label">Followers</p>
+            </div>
+            <div class="card__new-followeres">
+               <div class="icon">
+                  <img src="./assets/images/icon-up.svg" alt="" srcset="">
+               </div>
+               <p class="card__amaount">12</p>
+               <p class="card__label">Today</p>
+            </div>
+         </div>
+
+         <div class="card twitter">
+            <div class="card__social">
+               <img src="./assets/images/icon-twitter.svg" alt="" srcset="">
+               <p class="card__address">@nathanf</p>
+            </div>
+            <div class="card__followeres">
+               <p class="card__amaount">1044</p>
+               <p class="card__label">Followers</p>
+            </div>
+            <div class="card__new-followeres">
+               <div class="icon">
+                  <img src="./assets/images/icon-up.svg" alt="" srcset="">
+               </div>
+               <p class="card__amaount">99</p>
+               <p class="card__label">Today</p>
+            </div>
+         </div>
+
+         <div class="card instagram">
+            <div class="card__social">
+               <img src="./assets/images/icon-instagram.svg" alt="" srcset="">
+               <p class="card__address">@realnathanf</p>
+            </div>
+            <div class="card__followeres">
+               <p class="card__amaount">11K</p>
+               <p class="card__label">Followers</p>
+            </div>
+            <div class="card__new-followeres">
+               <div class="icon">
+                  <img src="./assets/images/icon-up.svg" alt="" srcset="">
+               </div>
+               <p class="card__amaount">1099</p>
+               <p class="card__label">Today</p>
+            </div>
+         </div>
+
+         <div class="card youtube">
+            <div class="card__social youtube">
+               <img src="./assets/images/icon-youtube.svg" alt="" srcset="">
+               <p class="card__address">Nathan F.</p>
+            </div>
+            <div class="card__followeres">
+               <p class="card__amaount">8239</p>
+               <p class="card__label">Subscribers</p>
+            </div>
+            <div class="card__new-followeres">
+               <div class="icon">
+                  <img src="./assets/images/icon-down.svg" alt="" srcset="">
+               </div>
+               <p class="card__amaount">1099</p>
+               <p class="card__label">Today</p>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="overview">
+         <h2 class="sub-title">Overview - Today</h2>
+         <div class="cards">
+
+            <div class="sumary facebook">
+               <div class="left-top">Page Views</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-facebook.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">87</div>
+               <div class="right-bottom up">
+                  <div>
+                     <img src="./assets/images/icon-up.svg" alt="" srcset="">
+                  </div>
+                  <p> 3%</p>
+               </div>
+            </div>
+
+            <div class="sumary facebook">
+               <div class="left-top">Likes</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-facebook.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">52</div>
+               <div class="right-bottom down">
+                  <div>
+                     <img src="./assets/images/icon-down.svg" alt="" srcset="">
+                  </div>
+                  <p> 2%</p>
+               </div>
+            </div>
+
+            <div class="sumary instagram">
+               <div class="left-top">Likes</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-instagram.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">5462</div>
+               <div class="right-bottom up">
+                  <div>
+                     <img src="./assets/images/icon-up.svg" alt="" srcset="">
+                  </div>
+                  <p> 5257%</p>
+               </div>
+            </div>
+
+            <div class="sumary instagram">
+               <div class="left-top">Profile Views</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-instagram.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">52k</div>
+               <div class="right-bottom up">
+                  <div>
+                     <img src="./assets/images/icon-up.svg" alt="" srcset="">
+                  </div>
+                  <p> 1375%</p>
+               </div>
+            </div>
+
+            <div class="sumary twitter">
+               <div class="left-top">Retweets</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-twitter.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">117</div>
+               <div class="right-bottom up">
+                  <div>
+                     <img src="./assets/images/icon-up.svg" alt="" srcset="">
+                  </div>
+                  <p> 303%</p>
+               </div>
+            </div>
+
+            <div class="sumary twitter">
+               <div class="left-top">Likes</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-twitter.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">507</div>
+               <div class="right-bottom up">
+                  <div>
+                     <img src="./assets/images/icon-up.svg" alt="" srcset="">
+                  </div>
+                  <p> 553%</p>
+               </div>
+            </div>
+
+            <div class="sumary youtube">
+               <div class="left-top">Liks</div>
+               <div class="right-top">
+                  <img class="img" src="./assets/images/icon-youtube.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">107</div>
+               <div class="right-bottom down">
+                  <div>
+                     <img src="./assets/images/icon-down.svg" alt="" srcset="">
+                  </div>
+                  <p> 3%</p>
+               </div>
+            </div>
+
+            <div class="sumary youtube">
+               <div class="left-top">Total Views</div>
+               <div class="right-top">
+                  <img class="img"src="./assets/images/icon-youtube.svg" alt="" srcset="">
+               </div>
+               <div class="left-bottom">1407</div>
+               <div class="right-bottom down">
+                  <div>
+                     <img src="./assets/images/icon-down.svg" alt="" srcset="">
+                  </div>
+                  <p> 12%</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Taguara Digital</a>.
+  </div>
+
+  <script src="/darkmode.js"></script>
+</body>
+</html>
