@@ -78,7 +78,7 @@ body{
    background: var(--bg-header);
    // height: 220px;
    border-radius: 10px;
-   margin:1rem ;
+   margin:1rem 3rem;
 }
 
 .header-title{
@@ -109,7 +109,7 @@ body{
    justify-content: space-between;
 }
 
- @media screen and (min-width: 376px) {
+ @media screen and (min-width: 375px) {
    .header-theme {
       width: fit-content;
       justify-content: flex-end;
@@ -162,10 +162,10 @@ body{
 }
 
 .card{
-   width: 280px;
+   width: 290px;
    height: 180px;
    padding: .8rem;
-   margin:  1rem;
+   margin:  .8rem .6rem;
    position: relative;
    background: var(--bg-cards);
    border-radius: 5px;
@@ -217,14 +217,15 @@ body{
 
 .sub-title{
    color: var(--txt-light);
-   padding-left: 2.4rem;
+   padding-left: 5rem;
+
 }
 
 .sumary{
-   width: 280px;
+   width: 290px;
    height: 90px;
    padding: .8rem;
-   margin:  .6rem 1rem;
+   margin:  .6rem .6rem;
    position: relative;
    background: var(--bg-cards);
    display: grid;
