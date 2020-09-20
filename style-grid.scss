@@ -201,7 +201,7 @@ body{
    .card__amaount{
       margin: 0;
       color: (var(--txt-light));
-      font-size: 48px;
+      font-size: 50px;
       font-weight: 700
    }
    .card__label{
@@ -239,7 +239,7 @@ body{
    grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr;
    justify-items: center;
-   gap: 10px 20px;
+   gap: 20px 10px;
 }
 
 
@@ -311,11 +311,7 @@ break point
 
 
 @media (min-width: 376px) {
-   .cards{
-      margin-top: -7rem;
-      grid-template-columns: 1fr 1fr;
-   }
-
+   .cards,
    .cards-sumary{
       grid-template-columns: 1fr 1fr;
    }
@@ -342,7 +338,11 @@ break point
    }
 
 
-   .cards,
+   .cards{
+      margin-top: -7rem;
+      grid-template-columns: repeat(4,1fr);
+   }
+
    .cards-sumary{
       grid-template-columns: repeat(4,1fr);
    }
