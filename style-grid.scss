@@ -239,7 +239,7 @@ body{
    grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr;
    justify-items: center;
-   gap: 10px;
+   gap: 10px 20px;
 }
 
 
@@ -312,7 +312,7 @@ break point
 
 @media (min-width: 376px) {
    .cards{
-      margin-top: -8rem;
+      margin-top: -7rem;
       grid-template-columns: 1fr 1fr;
    }
 
