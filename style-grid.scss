@@ -92,14 +92,14 @@ body{
  
    &__main {
       margin: 0;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 700;
       color: var(--txt-light);
    }
 
    &__sub {
       margin-top: 0;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 700;
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--txt-dark);
@@ -188,7 +188,7 @@ body{
    .card__amaount{
       margin: 0;
       color: (var(--txt-light));
-      font-size: 48px;
+      font-size: 40px;
       font-weight: 700
    }
    .card__label{
@@ -259,7 +259,7 @@ body{
    justify-self: start;
    align-self: center;
    color: var(--txt-light);
-   font-size: 26px;
+   font-size: 24px;
    font-weight: 700;
 }
 
@@ -301,6 +301,9 @@ break point
    }
 
    .header-title{
+         &__main {
+            font-size: 28px;
+         }
 
       &__sub {
          padding-bottom: 0;
