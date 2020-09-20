@@ -31,12 +31,15 @@ html {
 
 body{
    width: 100%;
-   max-width: 1024px;
+   max-width: 1200px;
    background: var(--bg-general);
    color:var(--txt-dark);
    font-family: 'Inter', sans-serif;
    font-weight: 700;
    margin: 0 auto;
+}
+.main{
+   margin-bottom: 10rem;
 }
 
 .up{
@@ -100,7 +103,7 @@ body{
 
    &__sub {
       margin-top: 0;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
       padding-bottom: 1rem;
       border-bottom: 1px solid var(--txt-dark);
@@ -234,7 +237,7 @@ body{
 
 .sumary{
    width: 90%;
-   height: 120px;
+   height: 110px;
    position: relative;
    background: var(--bg-cards);
    border-radius: 5px;
