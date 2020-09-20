@@ -30,7 +30,7 @@ html {
 }
 
 body{
-   max-width: 1440px;
+   // max-width: 1440px;
    background: var(--bg-general);
    color:var(--txt-dark);
    font-family: 'Inter', sans-serif;
@@ -81,7 +81,7 @@ body{
 .main-header{
    display:grid;
    grid-template-columns: 1fr;
-   margin:.5rem 1rem;
+   margin:.5rem 5rem;
    padding: .5rem;
 }
 
@@ -149,6 +149,8 @@ body{
 .cards{
    position: relative;
    margin-top: -7em;
+   margin-left: 5rem;
+   margin-right: 5rem;
    display:grid;
    grid-template-columns: 1fr;
 
@@ -211,13 +213,16 @@ body{
 .sub-title{
    display:grid;
    grid-template-columns: 1fr;
-   margin:2rem 1rem 1rem;
+   margin:2rem 5rem 1rem;
    padding: .5rem;
    color: var(--txt-light);
 }
 
 .cards-sumary{
    position: relative;
+   margin-left: 5rem;
+   margin-right: 5rem;
+
    display:grid;
    grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr;
