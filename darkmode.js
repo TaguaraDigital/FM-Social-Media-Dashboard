@@ -1,4 +1,4 @@
-const darkModeSwitch = document.getElementById("dark-mode-switch");
+const darkModeSwitch = document.getElementById("dark-mode");
 let lightMode = (localStorage.getItem("lightMode") === "true") ? true : false
 
 const isDarktMode = () => {
