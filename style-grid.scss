@@ -78,7 +78,7 @@ body{
 
 .header{
    height: 220px;
-   background: var(--bg-general);
+   background: var(--bg-header);
    border-radius: 10px;
    margin-top: 1.5rem;
 }
@@ -154,7 +154,7 @@ body{
 
 .cards{
    position: relative;
-   margin-top: -6em;
+   margin-top: -6rem;
    margin-left: 1rem;
    margin-right: 1rem;
    display:grid;
@@ -311,7 +311,11 @@ break point
 
 
 @media (min-width: 376px) {
-   .cards,
+   .cards{
+      margin-top: -8rem;
+      grid-template-columns: 1fr 1fr;
+   }
+
    .cards-sumary{
       grid-template-columns: 1fr 1fr;
    }
