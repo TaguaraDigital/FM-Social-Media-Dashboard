@@ -12,6 +12,7 @@
    --bg-general: hsl(230, 17%, 14%);
    --bg-header: hsl(232, 19%, 15%);
    --bg-cards: hsl(228, 28%, 20%);
+   --bg-cards-hover:  hsl(228, 26%, 27%);
    --txt-dark: hsl(228, 34%, 66%);
    --txt-light: hsl(0, 0%, 100%);
 }
@@ -21,6 +22,7 @@
    --bg-general: hsl(0, 0%, 100%);
    --bg-header: hsl(225, 100%, 98%);
    --bg-cards: hsl(227, 47%, 96%);
+   --bg-cards-hover:  hsl(232, 33%, 91%);;
    --txt-dark: hsl(228, 12%, 44%);
    --txt-light: hsl(230, 17%, 14%);
 }
@@ -35,7 +37,6 @@ body{
    background: var(--bg-general);
    color:var(--txt-dark);
    font-family: 'Inter', sans-serif;
-   font-weight: 700;
    margin: 0 auto;
 }
 .main{
@@ -127,6 +128,7 @@ body{
    outline: none;
    border-radius: 10px;
    transition: all .5s;
+   cursor: pointer;
 
    &::before{
       content: "";
@@ -173,6 +175,11 @@ body{
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
+
+   &:hover{
+      cursor: pointer;
+      background: var(--bg-cards-hover);
+   }
 }
 
 .card__social{
@@ -194,11 +201,12 @@ body{
    .card__amaount{
       margin: 0;
       color: (var(--txt-light));
-      font-size: 40px;
+      font-size: 48px;
       font-weight: 700
    }
    .card__label{
       margin: 0;
+      font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 2px;
    }
@@ -244,6 +252,11 @@ body{
    display: grid;
    grid-template-columns: repeat(2,1fr);
    grid-template-rows: repeat(2,1fr);
+
+   &:hover{
+      cursor: pointer;
+      background: var(--bg-cards-hover);
+   }
 }
 
 .left-top{
@@ -268,7 +281,7 @@ body{
    justify-self: start;
    align-self: center;
    color: var(--txt-light);
-   font-size: 24px;
+   font-size: 30px;
    font-weight: 700;
 }
 
@@ -319,6 +332,11 @@ break point
          border-bottom: 1px solid transparent;
       }
    }
+
+   .header-theme{
+      justify-content: flex-end;
+   }
+
 
    .cards,
    .cards-sumary{
