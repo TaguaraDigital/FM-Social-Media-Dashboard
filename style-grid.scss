@@ -16,6 +16,28 @@
    --txt-light: hsl(0, 0%, 100%);
 }
 
+.lightmode {
+   --toggle: hsl(230, 22%, 74%);
+   --bg-general: hsl(0, 0%, 100%);
+   --bg-header: hsl(225, 100%, 98%);
+   --bg-cards: hsl(227, 47%, 96%);
+   --txt-dark: hsl(228, 12%, 44%);
+   --txt-light: hsl(230, 17%, 14%);
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body{
+   max-width: 1200px;
+   background: var(--bg-general);
+   color:var(--txt-dark);
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
+   margin: 0 auto;
+}
+
 .up{
    color: hsl(163, 72%, 41%);
 }
@@ -49,31 +71,11 @@
    --social-clr: hsl(348, 97%, 39%);
 }
 
-.lightmode {
-   --toggle: hsl(230, 22%, 74%);
-   --bg-general: hsl(0, 0%, 100%);
-   --bg-header: hsl(225, 100%, 98%);
-   --bg-cards: hsl(227, 47%, 96%);
-   --txt-dark: hsl(228, 12%, 44%);
-   --txt-light: hsl(230, 17%, 14%);
-}
-
-html {
-   scroll-behavior: smooth;
-}
-
-body{
-   background: var(--bg-general);
-   color:var(--txt-dark);
-   font-family: 'Inter', sans-serif;
-   font-weight: 700;
-   margin: 0;
-}
-
 .header{
    height: 220px;
    background: var(--bg-general);
    border-radius: 10px;
+   margin-top: 2rem;
 }
 
 .main-header{
@@ -115,8 +117,7 @@ body{
 .switch{
    position: relative;
    width: 44px;
-   height: 20px;
-   margin-left: 5px;
+   height: 22px;
    appearance: none;
    background: var(--toggle);
    outline: none;
@@ -128,7 +129,7 @@ body{
       position: absolute;
       width: 18px;
       height: 18px;
-      top: 1px;
+      top: 2px;
       left: 4px;
       background: var(--bg-general);
       border-radius: 50%;
@@ -157,7 +158,7 @@ body{
 
 .card{
    width: 90%;
-   height: 180px;
+   height: 200px;
    position: relative;
    background: var(--bg-cards);
    border-radius: 5px;
@@ -221,14 +222,13 @@ body{
    grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr;
    justify-items: center;
-
-   gap: 5px;
+   gap: 20px 5px;
 }
 
 
 .sumary{
    width: 90%;
-   height: 90px;
+   height: 100px;
    position: relative;
    background: var(--bg-cards);
    border-radius: 5px;
@@ -254,20 +254,20 @@ body{
 }
 
 .left-bottom{
-   padding-bottom:1rem;
+   // padding-bottom:1rem;
    padding-left:1rem;
    justify-self: start;
-   align-self: start;
+   align-self: center;
    color: var(--txt-light);
-   font-size: 30px;
+   font-size: 26px;
    font-weight: 700;
 }
 
 .right-bottom{
-   padding-bottom:1rem;
+   // padding-bottom:1rem;
    padding-right:1rem;
    justify-self: end;
-   align-self: start;
+   align-self: center;
 
    display: flex;
    align-items: center;
@@ -297,7 +297,7 @@ break point
 
 @media screen and (min-width: 769px) {
    .main-header{
-      grid-template-columns: 80% 20%;
+      grid-template-columns: 85% 15%;
    }
 
    .header-title{
